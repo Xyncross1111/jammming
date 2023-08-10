@@ -1,0 +1,47 @@
+.playlist {
+
+    background-color: black;
+    margin: 3rem;
+    border-radius: 1rem;
+    opacity: 0.8;
+}
+
+.playlist-name {
+
+    border-bottom: 1px solid white;
+    margin: 0 2rem;
+}
+
+.playlist-name input {
+
+    color: white;
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 3rem;
+    background-color: transparent;
+    border: 0px;
+
+}
+
+.playlist-name input:focus {
+
+    border: none;
+}
+
+.submit button {
+
+    background-color: rgb(149, 106, 228);
+    color: white;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 1.25rem;
+}
+
+.submit button:hover {
+
+    background-color: rgb(86, 34, 86);
+    transition: color 300ms linear;
+}

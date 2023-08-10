@@ -1,0 +1,51 @@
+.Track {
+    text-align: left;
+    border-bottom: 1.25px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.Track-information {
+
+    display: flex;
+    align-items: center;
+}
+
+.Track-information img {
+
+    max-width: 64px;
+    max-height: 64px;
+    margin-right: 16px;
+    border-radius: 2px;
+}
+
+h3 {
+
+    font-size: 1.25rem;
+}
+
+.Track-button {
+
+    font-size: 2rem;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    margin: 0.4rem;
+    padding-right: 5px;
+}
+
+.Track-button:hover {
+    transition: color 150ms linear;
+    cursor: pointer;
+}
+
+.add:hover {
+    color: green;
+
+}
+
+.remove:hover {
+    color: hotpink;
+}

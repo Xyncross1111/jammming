@@ -1,0 +1,36 @@
+.search {
+
+    height: 250px;
+    margin: 2rem auto;
+    color: white;
+
+}
+
+.searchbox {
+
+    margin: 4rem auto;
+    
+}
+
+.searchbox input{
+    background-color: #000000;
+    border-radius: 30px;
+    padding: 20px;
+    color: white;
+    width: 300px;
+}
+
+.search button {
+    background-color: rgb(149, 106, 228);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 150px;
+    font-size: 1.25rem;
+}
+  
+.search button:hover {
+    background-color: rgb(86, 34, 86);
+    transition: color 300ms linear;
+}
