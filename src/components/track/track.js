@@ -7,6 +7,7 @@ const Track = (props) => {
       (event) => {
         props.onAdd(props.track);
       },
+      // eslint-disable-next-line
       [props.onAdd, props.track]
     );
     
@@ -14,6 +15,7 @@ const Track = (props) => {
       (event) => {
         props.onRemove(props.track);
       },
+      // eslint-disable-next-line
       [props.onRemove, props.track]
     );
 
