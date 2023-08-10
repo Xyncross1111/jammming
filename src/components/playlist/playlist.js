@@ -8,7 +8,7 @@ function Playlist(props) {
         (event) => {
 
             props.onNameChange(event.target.value);
-            
+            // eslint-disable-next-line
         },[props.onNameChange]
     )
 
