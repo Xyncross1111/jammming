@@ -6,6 +6,8 @@ const Track = (props) => {
     const addTrack = useCallback(
       (event) => {
         props.onAdd(props.track);
+
+        event.target.innerHTML = "✔️";
       },
       // eslint-disable-next-line
       [props.onAdd, props.track]
@@ -14,6 +16,10 @@ const Track = (props) => {
     const removeTrack = useCallback(
       (event) => {
         props.onRemove(props.track);
+
+        const searchListTrack = document.getElementById(props.track.id);
+
+        searchListTrack.children[1].children[0].innerHTML = "+"
       },
       // eslint-disable-next-line
       [props.onRemove, props.track]
@@ -35,9 +41,8 @@ const Track = (props) => {
     };
     
     return(
-        <div className="Track">
+        <div className="Track" id={props.track.id} >
             <div className="Track-information">
-
                 <img src={props.track.img} alt="Album Cover" />
 
                 <div className="details">

@@ -21,6 +21,7 @@ function App() {
         return;
 
       setPlaylist((prevTracks) => [...prevTracks, track]);
+
     },
     [playlist]
   );
@@ -33,12 +34,16 @@ function App() {
 
   const handlePlaylistSave = useCallback( () => {
 
+    if (!playlistName) {
+      alert("Please Enter a valid Playlist name.")
+      return;
+    }
 
     const trackUris = playlist.map( track => track.uri );
 
     Spotify.savePlaylist(playlistName, trackUris);
 
-    setPlaylistName("New Playlist");
+    setPlaylistName("");
     setPlaylist([]);
 
   },[playlistName, playlist])

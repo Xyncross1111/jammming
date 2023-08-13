@@ -13,11 +13,13 @@
 }
 
 .searchbox input{
+
     background-color: #000000;
-    border-radius: 30px;
+    border-radius: 40px;
     padding: 20px;
     color: white;
-    width: 300px;
+    width: 350px;
+    font-size: 1.5rem;
 }
 
 .search button {

@@ -1,5 +1,5 @@
 const clientId = 'b791d339b30d42a6ac6a58c878c339bf';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'https://xyncross-jamming.netlify.app/';
 
 let accessToken;
 
